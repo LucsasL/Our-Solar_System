@@ -9,39 +9,40 @@ const maxPixelRatio = Math.min(window.devicePixelRatio, 2);
 let posx = 5;
 
 // Texture Loader
-const textureLoader = new THREE.TextureLoader();
-const cubeTextureLoader = new THREE.CubeTextureLoader();
-cubeTextureLoader.setPath("../public/static/images/cubeMap/");
+const loadingManager = new THREE.LoadingManager();
+const textureLoader = new THREE.TextureLoader(loadingManager);
+const cubeTextureLoader = new THREE.CubeTextureLoader(loadingManager);
+cubeTextureLoader.setPath("../public/textures/cubeMap/");
 
 // Textures
-const sunTex = textureLoader.load("../public/static/images/2k_sun.jpg");
+const sunTex = textureLoader.load("../public/textures/2k_sun.jpg");
 sunTex.colorSpace = THREE.SRGBColorSpace;
 
-const mercuryTex = textureLoader.load("../public/static/images/2k_mercury.jpg");
+const mercuryTex = textureLoader.load("../public/textures/2k_mercury.jpg");
 mercuryTex.colorSpace = THREE.SRGBColorSpace;
 
-const venusTex = textureLoader.load("../public/static/images/2k_venus_surface.jpg");
+const venusTex = textureLoader.load("../public/textures/2k_venus_surface.jpg");
 venusTex.colorSpace = THREE.SRGBColorSpace;
 
-const earthTex = textureLoader.load("../public/static/images/2k_earth_daymap.jpg");
+const earthTex = textureLoader.load("../public/textures/2k_earth_daymap.jpg");
 earthTex.colorSpace = THREE.SRGBColorSpace;
 
-const marsTex = textureLoader.load("../public/static/images/2k_mars.jpg");
+const marsTex = textureLoader.load("../public/textures/2k_mars.jpg");
 marsTex.colorSpace = THREE.SRGBColorSpace;
 
-const jupiterTex = textureLoader.load("../public/static/images/2k_jupiter.jpg");
+const jupiterTex = textureLoader.load("../public/textures/2k_jupiter.jpg");
 jupiterTex.ColorSpace = THREE.SRGBColorSpace;
 
-const saturnTex = textureLoader.load("../public/static/images/2k_saturn.jpg");
+const saturnTex = textureLoader.load("../public/textures/2k_saturn.jpg");
 saturnTex.ColorSpace = THREE.SRGBColorSpace;
 
-const uranusTex = textureLoader.load("../public/static/images/2k_uranus.jpg");
+const uranusTex = textureLoader.load("../public/textures/2k_uranus.jpg");
 uranusTex.ColorSpace = THREE.SRGBColorSpace;
 
-const neptuneTex = textureLoader.load("../public/static/images/2k_neptune.jpg");
+const neptuneTex = textureLoader.load("../public/textures/2k_neptune.jpg");
 neptuneTex.ColorSpace = THREE.SRGBColorSpace;
 
-const moonTex = textureLoader.load("../public/static/images/2k_moon.jpg");
+const moonTex = textureLoader.load("../public/textures/2k_moon.jpg");
 moonTex.colorSpace = THREE.SRGBColorSpace;
 
 // Geometries
