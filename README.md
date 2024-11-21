@@ -9,3 +9,5 @@ Much of it is already done, the 3d environment is with its planets, the only thi
 Project's link: https://our-solar-system-psi.vercel.app/
 
 **Work in Progress**
+
+![Solar System Simulation]()
