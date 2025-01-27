@@ -8,9 +8,29 @@
     <link rel="stylesheet" href="src/styles/index.css" />
   </head>
   <body>
+
+    <div class="loading">
+      <div>
+        <div class="animCont">
+          <svg width="400" height="150">
+            <circle cx="110" cy="100" r="50" fill="white" id="sun" />
+            <circle cx="220" cy="105" r="20" fill="white" id="plan1" />
+            <circle cx="280" cy="105" r="20" fill="white" id="plan2" />
+            <circle cx="340" cy="105" r="20" fill="white" id="plan3" />
+          </svg>
+        </div>
+
+        <div class="test"></div>
+
+        <h1>
+          Loading
+        </h1>
+      </div>
+    </div>
     <canvas class="threejs"></canvas>
 
-    .
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
     <script type="module" src="src/main.js"></script>
+    <script src="./src/loading-screen.js"></script>
   </body>
 </html>

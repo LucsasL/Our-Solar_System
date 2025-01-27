@@ -1,0 +1,6 @@
+@mixin flex($flow: row wrap, $Xaxis: center, $Yaxis: center) {
+  display: flex;
+  flex-flow: $flow;
+  justify-content: $Xaxis;
+  align-items: $Yaxis;
+}
